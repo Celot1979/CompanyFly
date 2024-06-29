@@ -2,12 +2,22 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.companyfly.HelloController">
+<VBox alignment="CENTER" prefHeight="642.0" prefWidth="1206.0" spacing="100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.companyfly.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets left="20.0" right="20.0" />
     </padding>
+   <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../logo.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
 
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="!" />
